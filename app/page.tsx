@@ -4,7 +4,7 @@ import { rootDomain } from '@/lib/utils';
 
 export default async function HomePage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-white p-4 relative">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-neutral-100 to-neutral-400 p-4 relative">
       <div className="absolute top-4 right-4">
         <Link
           href="/admin"
@@ -24,7 +24,7 @@ export default async function HomePage() {
           </p>
         </div>
 
-        <div className="mt-8 bg-white shadow-md rounded-lg p-6">
+        <div className="mt-8 bg-gray-100 shadow-md rounded-lg p-6">
           <SubdomainForm />
         </div>
       </div>
