@@ -29,6 +29,7 @@ export function isValidIcon(str: string) {
 type SubdomainData = {
   emoji: string;
   createdAt: number;
+  nombre: string;
 };
 
 export async function getSubdomainData(subdomain: string) {
