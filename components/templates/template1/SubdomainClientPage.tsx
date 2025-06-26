@@ -30,6 +30,8 @@ export default function SubdomainClientPage({
         window.open(url, '_blank');
     };
 
+    const base64Image = subdomainData.BannerImage;
+
     return (
         <div className="flex flex-col min-h-screen">
             {/* Keep the root domain link */}
@@ -47,7 +49,7 @@ export default function SubdomainClientPage({
                 <div className={styles.banner}>
                     <div className={styles.bannerImage}>
                         <Image
-                            src="/invitations-files/Cristian&Vanessa/IMG_0498.jpeg"
+                            src={`data:image/jpeg;base64,${base64Image}`}
                             alt="Banner Image"
                             fill
                             priority
