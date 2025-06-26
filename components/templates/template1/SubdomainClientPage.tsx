@@ -70,12 +70,6 @@ export default function SubdomainClientPage({
                     </p>
                 </div>
             </section>
-
-            <div className="text-center py-8">
-                <h2 className="text-2xl font-bold">
-                    {subdomainData.groomName} & {subdomainData.brideName}
-                </h2>
-            </div>
         </div>
     );
 }
