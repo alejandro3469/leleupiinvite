@@ -1,7 +1,12 @@
 /*VARIABLES*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 /*PHOTO-SECTION*/
+.templateContainer {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
 .bannerContainer {
     position: relative;
     width: 100%;

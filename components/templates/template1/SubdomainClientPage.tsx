@@ -33,7 +33,7 @@ export default function SubdomainClientPage({
     const base64Image = subdomainData.BannerImage;
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className={`flex flex-col min-h-screen ${styles.templateContainer}`}>
 
             {/* Banner section */}
             <div className={styles.bannerContainer}>
