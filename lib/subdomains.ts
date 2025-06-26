@@ -36,6 +36,7 @@ export interface SubdomainData {
   BannerComlement: string;
   BannerImage: string;
   SecondImage: string;
+  WeddingDate: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -68,7 +69,8 @@ export async function getAllSubdomains() {
       BannerQuote: data?.BannerQuote || "",
       BannerComlement: data?.BannerComlement || "",
       BannerImage: data?.BannerImage || "",
-      SecondImage: data?.SecondImage || ""
+      SecondImage: data?.SecondImage || "",
+      WeddingDate: data?.WeddingDate || ""
     };
   });
 }
