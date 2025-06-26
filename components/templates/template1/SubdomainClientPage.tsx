@@ -31,6 +31,7 @@ export default function SubdomainClientPage({
     };
 
     const base64Image = subdomainData.BannerImage;
+    const secondImage = subdomainData.SecondImage;
 
     return (
         <div className={`flex flex-col min-h-screen ${styles.templateContainer}`}>
@@ -70,6 +71,20 @@ export default function SubdomainClientPage({
                     </p>
                 </div>
             </section>
+
+            <div className={styles.bannerContainer}>
+                <div className={styles.banner}>
+                    <div className={styles.bannerImage}>
+                        <Image
+                            src={`data:image/jpeg;base64,${secondImage}`}
+                            alt="Banner Image"
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
