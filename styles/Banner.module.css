@@ -79,7 +79,6 @@
     justify-content: center;
     font-size: 4rem;
     /*font-weight: bold;*/
-    color: #pm run dev
 ;
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
     transform: rotate(-45deg);
@@ -91,7 +90,6 @@
     align-items: center;
     justify-content: center;
     /*font-weight: bold;*/
-    font-family: var(--font-lora);
     color: #63666A;
 
     text-align: center;
@@ -120,7 +118,6 @@
 .letter, .ampersand {
     margin: 10px 0;
     transform: rotate(45deg);
-    font-family: var(--font-great-vibes), cursive;
     color: #3A6EA5;
 }
 .ampersand {

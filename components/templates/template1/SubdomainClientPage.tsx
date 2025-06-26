@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/Banner.module.css';
+import styles from '@/styles/Banner.module.css';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { protocol, rootDomain } from '@/lib/utils';
@@ -10,27 +10,6 @@ import { SubdomainData } from '@/lib/subdomains';
 
 import localFont from 'next/font/local';
 
-const greatVibes = localFont({
-    src: [
-        {
-            path: '/GreatVibes-Regular.ttf',
-            weight: '400',
-            style: 'normal',
-        },
-    ],
-    variable: '--font-great-vibes',
-});
-
-const lora = localFont({
-    src: [
-        {
-            path: '/Lora-Regular.ttf',
-            weight: '400',
-            style: 'normal',
-        },
-    ],
-    variable: '--font-lora',
-});
 
 interface SubdomainClientPageProps {
     subdomain: string;
@@ -90,7 +69,7 @@ export default function SubdomainClientPage({
             {/* Initials section */}
             <section className={`${styles.initialsSectionContainer}`}>
                 <section className={`${styles.initialsContainer}`}>
-                    <div className={`${styles.initialsLetters} ${greatVibes.variable}`}>
+                    <div className={`${styles.initialsLetters}`}>
                         <div className={styles.initials}>
                             <span className={styles.letter}>{subdomainData.groomName.charAt(0)}</span>
                             <span className={styles.ampersand}>&</span>
@@ -98,7 +77,7 @@ export default function SubdomainClientPage({
                         </div>
                     </div>
                 </section>
-                <div className={`${styles.quoteText} ${lora.variable}`}>
+                <div className={`${styles.quoteText}`}>
                     <p className={styles.accent}>
                         {
                             "\"En un mundo lleno de momentos fugaces, " +
