@@ -6,42 +6,38 @@ import { getSubdomainData } from '@/lib/subdomains';
 import { protocol, rootDomain } from '@/lib/utils';
 import SubdomainClientPage from '@/components/templates/template1/SubdomainClientPage';
 
-export async function generateMetadata({
-                                         params
-                                       }: {
-  params: { subdomain: string };
-}): Promise<Metadata> {
-  const { subdomain } = params;
-  const subdomainData = await getSubdomainData(subdomain);
-
-  if (!subdomainData) {
-    return {
-      title: rootDomain
-    };
-  }
-
-  return {
-    title: `${subdomain}.${rootDomain}`,
-    description: `Subdomain page for ${subdomain}.${rootDomain}`
-  };
+interface PageProps {
+    params: { subdomain: string };
 }
 
-export default async function SubdomainPage({
-                                              params
-                                            }: {
-  params: { subdomain: string };
-}) {
-  const { subdomain } = params;
-  const subdomainData = await getSubdomainData(subdomain);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { subdomain } = params;
+    const subdomainData = await getSubdomainData(subdomain);
 
-  if (!subdomainData) {
-    notFound();
-  }
+    if (!subdomainData) {
+        return {
+            title: rootDomain
+        };
+    }
 
-  return (
-      <SubdomainClientPage
-          subdomain={'subdomain'}
-          subdomainData={subdomainData}
-      />
-  );
+    return {
+        title: `${subdomain}.${rootDomain}`,
+        description: `Subdomain page for ${subdomain}.${rootDomain}`
+    };
+}
+
+export default async function SubdomainPage({ params }: PageProps) {
+    const { subdomain } = params;
+    const subdomainData = await getSubdomainData(subdomain);
+
+    if (!subdomainData) {
+        notFound();
+    }
+
+    return (
+        <SubdomainClientPage
+            subdomain={subdomain} // Fixed: was passing hardcoded 'subdomain' string
+            subdomainData={subdomainData}
+        />
+    );
 }
