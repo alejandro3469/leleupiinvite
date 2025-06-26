@@ -1,29 +1,36 @@
-// app/[subdomain]/page.tsx
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getSubdomainData } from '@/lib/subdomains';
-import { rootDomain } from '@/lib/utils';
 import SubdomainClientPage from '@/components/templates/template1/SubdomainClientPage';
+import { protocol, rootDomain } from '@/lib/utils';
 
-type Props = {
-    params: { subdomain: string };
-    searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { subdomain } = params;
+export async function generateMetadata({
+                                           params
+                                       }: {
+    params: Promise<{ subdomain: string }>;
+}): Promise<Metadata> {
+    const { subdomain } = await params;
     const subdomainData = await getSubdomainData(subdomain);
 
+    if (!subdomainData) {
+        return {
+            title: rootDomain
+        };
+    }
+
     return {
-        title: subdomainData ? `${subdomain}.${rootDomain}` : rootDomain,
-        description: subdomainData
-            ? `Wedding page for ${subdomainData.groomName} & ${subdomainData.brideName}`
-            : 'Wedding invitation page',
+        title: `${subdomain}.${rootDomain}`,
+        description: `Subdomain page for ${subdomain}.${rootDomain}`
     };
 }
 
-export default async function Page({ params }: Props) {
-    const { subdomain } = params;
+export default async function SubdomainPage({
+                                                params
+                                            }: {
+    params: Promise<{ subdomain: string }>;
+}) {
+    const { subdomain } = await params;
     const subdomainData = await getSubdomainData(subdomain);
 
     if (!subdomainData) {
@@ -32,7 +39,6 @@ export default async function Page({ params }: Props) {
 
     return (
         <SubdomainClientPage
-            subdomain={subdomain}
             subdomainData={subdomainData}
         />
     );

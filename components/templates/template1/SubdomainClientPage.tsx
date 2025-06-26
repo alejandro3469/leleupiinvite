@@ -8,10 +8,8 @@ import { protocol, rootDomain } from '@/lib/utils';
 import { SubdomainData } from '@/lib/subdomains';
 
 export default function SubdomainClientPage({
-                                                subdomain,
                                                 subdomainData
                                             }: {
-    subdomain: string;
     subdomainData: SubdomainData;
 }) {
     useEffect(() => {
@@ -84,7 +82,6 @@ export default function SubdomainClientPage({
                 <h2 className="text-2xl font-bold">
                     {subdomainData.groomName} & {subdomainData.brideName}
                 </h2>
-                <p className="mt-2">Welcome to {subdomain}.{rootDomain}</p>
             </div>
         </div>
     );
