@@ -6,6 +6,7 @@
 .templateContainer {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
+    color: #63666A;
 }
 .bannerContainer {
     position: relative;
@@ -96,7 +97,7 @@
     align-items: center;
     justify-content: center;
     /*font-weight: bold;*/
-    color: #63666A;
+    color: #7E96BA;
 
     text-align: center;
     margin: 24px;
@@ -124,7 +125,7 @@
 .letter, .ampersand {
     margin: 10px 0;
     transform: rotate(45deg);
-    color: #7E96BA;
+    color: #1b437c;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
