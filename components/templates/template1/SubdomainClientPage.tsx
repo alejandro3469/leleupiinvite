@@ -1,5 +1,4 @@
 "use client";
-
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Banner.module.css';
@@ -8,19 +7,13 @@ import Link from 'next/link';
 import { protocol, rootDomain } from '@/lib/utils';
 import { SubdomainData } from '@/lib/subdomains';
 
-import localFont from 'next/font/local';
-
-
-interface SubdomainClientPageProps {
-    subdomain: string;
-    subdomainData: SubdomainData;
-}
-
 export default function SubdomainClientPage({
                                                 subdomain,
                                                 subdomainData
-                                            }: SubdomainClientPageProps) {
-
+                                            }: {
+    subdomain: string;
+    subdomainData: SubdomainData;
+}) {
     useEffect(() => {
         const handleScroll = () => {
             const bannerImage = document.querySelector(`.${styles.bannerImage}`) as HTMLElement;
@@ -58,9 +51,9 @@ export default function SubdomainClientPage({
                         <Image
                             src="/invitations-files/Cristian&Vanessa/IMG_0498.jpeg"
                             alt="Banner Image"
-                            layout="fill"
-                            objectFit="cover"
+                            fill
                             priority
+                            className="object-cover"
                         />
                     </div>
                 </div>
@@ -79,21 +72,14 @@ export default function SubdomainClientPage({
                 </section>
                 <div className={`${styles.quoteText}`}>
                     <p className={styles.accent}>
-                        {
-                            "\"En un mundo lleno de momentos fugaces, " +
-                            "hemos encontrado un amor que perdura\""
-                        }
+                        {subdomainData.BannerQuote || "\"En un mundo lleno de momentos fugaces, hemos encontrado un amor que perdura\""}
                     </p>
                     <p className={styles.secondary}>
-                        {
-                            "Queremos compartir con ustedes este momento tan especial " +
-                            "y celebrar juntos la unión de nuestras vidas"
-                        }
+                        {subdomainData.BannerComlement || "Queremos compartir con ustedes este momento tan especial y celebrar juntos la unión de nuestras vidas"}
                     </p>
                 </div>
             </section>
 
-            {/* You can add more sections here that use the subdomainData */}
             <div className="text-center py-8">
                 <h2 className="text-2xl font-bold">
                     {subdomainData.groomName} & {subdomainData.brideName}

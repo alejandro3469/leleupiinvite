@@ -5,31 +5,24 @@ import { getSubdomainData } from '@/lib/subdomains';
 import { rootDomain } from '@/lib/utils';
 import SubdomainClientPage from '@/components/templates/template1/SubdomainClientPage';
 
-export async function generateMetadata({
-                                           params,
-                                       }: {
+type Props = {
     params: { subdomain: string };
-}): Promise<Metadata> {
+    searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { subdomain } = params;
     const subdomainData = await getSubdomainData(subdomain);
 
-    if (!subdomainData) {
-        return {
-            title: rootDomain,
-        };
-    }
-
     return {
-        title: `${subdomain}.${rootDomain}`,
-        description: `Subdomain page for ${subdomain}.${rootDomain}`,
+        title: subdomainData ? `${subdomain}.${rootDomain}` : rootDomain,
+        description: subdomainData
+            ? `Wedding page for ${subdomainData.groomName} & ${subdomainData.brideName}`
+            : 'Wedding invitation page',
     };
 }
 
-export default async function Page({
-                                       params,
-                                   }: {
-    params: { subdomain: string };
-}) {
+export default async function Page({ params }: Props) {
     const { subdomain } = params;
     const subdomainData = await getSubdomainData(subdomain);
 
