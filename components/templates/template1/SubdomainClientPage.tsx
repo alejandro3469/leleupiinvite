@@ -55,9 +55,9 @@ export default function SubdomainClientPage({
                 <section className={`${styles.initialsContainer}`}>
                     <div className={`${styles.initialsLetters}`}>
                         <div className={styles.initials}>
-                            <span className={styles.letter}>{subdomainData.groomName.charAt(0)}</span>
+                            <span className={styles.letter}>{subdomainData.groomName}</span>
                             <span className={styles.ampersand}>&</span>
-                            <span className={styles.letter}>{subdomainData.brideName.charAt(0)}</span>
+                            <span className={styles.letter}>{subdomainData.brideName}</span>
                         </div>
                     </div>
                 </section>
