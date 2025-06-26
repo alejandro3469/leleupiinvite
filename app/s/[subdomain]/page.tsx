@@ -54,7 +54,7 @@ export default async function SubdomainPage({
             Welcome to {subdomain}.{rootDomain}
           </h1>
           <p className="mt-3 text-lg text-gray-600">
-            This is your custom subdomain page {subdomainData.nombre}
+            Este es tu sitio web de boda! {subdomainData.groomName} & {subdomainData.brideName}
           </p>
         </div>
       </div>
