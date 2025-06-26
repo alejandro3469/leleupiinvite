@@ -16,8 +16,8 @@ export function isValidIcon(str: string) {
     // If the regex fails (e.g., in environments that don't support Unicode property escapes),
     // fall back to a simpler validation
     console.warn(
-      'Emoji regex validation failed, using fallback validation',
-      error
+        'Emoji regex validation failed, using fallback validation',
+        error
     );
   }
 
@@ -26,17 +26,20 @@ export function isValidIcon(str: string) {
   return str.length >= 1 && str.length <= 10;
 }
 
-type SubdomainData = {
+// Use either type or interface, but not both
+export interface SubdomainData {
   emoji: string;
   createdAt: number;
   groomName: string;
   brideName: string;
-};
+  BannerQuote: string;
+  BannerComlement: string;
+}
 
 export async function getSubdomainData(subdomain: string) {
   const sanitizedSubdomain = subdomain.toLowerCase().replace(/[^a-z0-9-]/g, '');
   const data = await redis.get<SubdomainData>(
-    `subdomain:${sanitizedSubdomain}`
+      `subdomain:${sanitizedSubdomain}`
   );
   return data;
 }
@@ -59,7 +62,9 @@ export async function getAllSubdomains() {
       emoji: data?.emoji || '❓',
       createdAt: data?.createdAt || Date.now(),
       groomName: data?.groomName || "",
-      brideName: data?.brideName || ""
+      brideName: data?.brideName || "",
+      BannerQuote: data?.BannerQuote || "",
+      BannerComlement: data?.BannerComlement || ""
     };
   });
 }

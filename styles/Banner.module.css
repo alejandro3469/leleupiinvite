@@ -1,0 +1,234 @@
+/*VARIABLES*/
+
+/*PHOTO-SECTION*/
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bannerImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.bannerImage :global(img) {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+
+/*INITIALS SECTION*/
+
+.initialsContainer {
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
+}
+.initialsSectionContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #E0E0E0;
+}
+.initialsLetters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Full viewport height */
+    background-color: transparent;
+}
+
+.initials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    /*font-weight: bold;*/
+    color: #pm run dev
+;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+    transform: rotate(-45deg);
+}
+.quoteText {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+    justify-content: center;
+    /*font-weight: bold;*/
+    font-family: var(--font-lora);
+    color: #63666A;
+
+    text-align: center;
+    margin: 24px;
+    line-height: 1.6;
+}
+.quoteText > .subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.accent {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.secondary {
+    font-size: 1.1rem;
+}
+.normal {
+    font-size: 1.1rem;
+}
+
+.letter, .ampersand {
+    margin: 10px 0;
+    transform: rotate(45deg);
+    font-family: var(--font-great-vibes), cursive;
+    color: #3A6EA5;
+}
+.ampersand {
+    font-size: 2rem;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.flowers {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.icon {
+    width: 80px;
+    color: #63666A;
+}
+.icon path {
+    stroke: #63666A;
+}
+.link {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #63666A;
+    padding: 16px 32px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    background-color: #3A6EA5;
+    color: #E0E0E0;
+    padding: 16px 32px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+.button:hover {
+    transform: translateY(-2px);
+}
+.link:hover {
+    transform: translateY(-2px);
+}
+.map {
+    width: 18px;
+    height: 18px;
+}
+.title {
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 200px;
+}
+
+.child {
+    width: 40px;
+    height: 80px;
+    background-color: #63666A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.middle, .red {
+    margin-top: 24px;
+    background-color: #3A6EA5;
+}
+.left {
+    background-color: #63666A;
+}
+.right {
+    background-color: #9ca2a8;
+}
+.red {
+    background-color: #D50000;
+}
+.white {
+    background-color: #ffffff;
+}
