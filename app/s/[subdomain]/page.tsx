@@ -40,7 +40,7 @@ export default async function SubdomainPage({
 
   return (
       <SubdomainClientPage
-          subdomain={subdomain}
+          subdomain={'subdomain'}
           subdomainData={subdomainData}
       />
   );
