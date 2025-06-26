@@ -63,7 +63,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #E0E0E0;
+    background-color: #EDE9E3;
 }
 .initialsLetters {
     display: flex;
@@ -119,7 +119,7 @@
 .letter, .ampersand {
     margin: 10px 0;
     transform: rotate(45deg);
-    color: #3A6EA5;
+    color: #7E96BA;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
