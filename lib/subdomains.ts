@@ -42,6 +42,7 @@ export interface SubdomainData {
   Address: string;
   PartySchedule: string;
   PartyUrl: string;
+  MainColor: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -81,6 +82,7 @@ export async function getAllSubdomains() {
       Address: data?.Address || "",
       PartySchedule: data?.PartySchedule || "",
       PartyUrl: data?.PartyUrl || "",
+      MainColor: data?.MainColor || "",
     };
   });
 }

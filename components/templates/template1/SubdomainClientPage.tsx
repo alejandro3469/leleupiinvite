@@ -86,7 +86,7 @@ export default function SubdomainClientPage({
                     </div>
                 </div>
             </div>
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <div>
                         <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -340,21 +340,21 @@ z"/>
                     <div>
                         <p className={styles.accent}>
                             {
-                                subdomainData.Location //"Salón Eugenia"
+                                subdomainData.Location
                             }
                         </p>
                         <p className={`${styles.normal}`}>
                             {
-                                subdomainData.Address //"El Barrido Ixmiquilpan, Hidalgo"
+                                subdomainData.Address
                             }
                         </p>
                         <b className={styles.normal}>
                             {
-                                subdomainData.PartySchedule //"13:00pm"
+                                subdomainData.PartySchedule
                             }
                         </b>
                     </div>
-                    <a href={subdomainData.PartyUrl/*"https://maps.app.goo.gl/HJ9rTkbpR5dKVDae7?g_st=com.google.maps.preview.copy"*/} className={`${styles.normal} ${styles.button}`}>
+                    <a href={subdomainData.PartyUrl} className={`${styles.normal} ${styles.button}`}>
                         {
                             "Ubicación"
                         }
