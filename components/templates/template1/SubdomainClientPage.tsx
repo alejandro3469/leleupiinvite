@@ -65,10 +65,10 @@ export default function SubdomainClientPage({
                 </section>
                 <div className={`${styles.quoteText}`}>
                     <p className={styles.accent}>
-                        "{subdomainData.BannerQuote || "En un mundo lleno de momentos fugaces, hemos encontrado un amor que perdura"}"
+                        "{subdomainData.BannerQuote || ""}"
                     </p>
                     <p className={styles.secondary}>
-                        {subdomainData.BannerComlement || "Queremos compartir con ustedes este momento tan especial y celebrar juntos la unión de nuestras vidas"}
+                        {subdomainData.BannerComlement || ""}
                     </p>
                 </div>
             </section>
