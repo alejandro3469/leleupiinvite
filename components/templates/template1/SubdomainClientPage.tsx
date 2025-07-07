@@ -64,7 +64,7 @@ export default function SubdomainClientPage({
                     </div>
                 </section>
                 <div className={`${styles.quoteText}`} style={{"color" : subdomainData.QuoteTextColor}}>
-                    <p className={styles.accent}>
+                    <p className={`${styles.accent} ${styles.cita}`}>
                         "{subdomainData.BannerQuote || ""}"
                     </p>
                     <p className={styles.secondary}>

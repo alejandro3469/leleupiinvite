@@ -1,7 +1,7 @@
 /*VARIABLES*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 /*PHOTO-SECTION*/
 .templateContainer {
     font-family: "Lora", serif;
@@ -111,6 +111,11 @@
 .accent {
     text-transform: uppercase;
     font-size: 1.6rem;
+}
+.cita {
+    font-family: "Libertinus Math", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .secondary {
     font-size: 1.1rem;
