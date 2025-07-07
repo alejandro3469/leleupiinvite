@@ -86,7 +86,7 @@ export default function SubdomainClientPage({
                     </div>
                 </div>
             </div>
-            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
+            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : "#000000"}}>
                 <div className={`${styles.quoteText}`}>
                     <div>
                         <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
