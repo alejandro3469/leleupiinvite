@@ -44,6 +44,7 @@ export interface SubdomainData {
   PartyUrl: string;
   MainColor: string;
   QuoteTextColor: string;
+  AccentColor: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -85,6 +86,7 @@ export async function getAllSubdomains() {
       PartyUrl: data?.PartyUrl || "",
       MainColor: data?.MainColor || "",
       QuoteTextColor: data?.QuoteTextColor || "",
+      AccentColor: data?.AccentColor || "",
     };
   });
 }

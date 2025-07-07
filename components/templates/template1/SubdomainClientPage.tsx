@@ -56,7 +56,7 @@ export default function SubdomainClientPage({
             <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
                 <section className={`${styles.initialsContainer}`}>
                     <div className={`${styles.initialsLetters}`}>
-                        <div className={styles.initials}>
+                        <div className={styles.initials} style={{"color": subdomainData.AccentColor}}>
                             <span className={styles.letter}>{subdomainData.groomName}</span>
                             <span className={styles.ampersand}>&</span>
                             <span className={styles.letter}>{subdomainData.brideName}</span>
