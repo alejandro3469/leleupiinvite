@@ -53,7 +53,7 @@ export default function SubdomainClientPage({
             </div>
 
             {/* Initials section */}
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
                 <section className={`${styles.initialsContainer}`}>
                     <div className={`${styles.initialsLetters}`}>
                         <div className={styles.initials}>
@@ -86,7 +86,7 @@ export default function SubdomainClientPage({
                     </div>
                 </div>
             </div>
-            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : "#000000"}}>
+            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <div>
                         <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -125,7 +125,7 @@ export default function SubdomainClientPage({
                     </div>
                 </div>
             </div>
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`} style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <div className={styles.subcontainer}>
                         <svg className={styles.icon} version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
