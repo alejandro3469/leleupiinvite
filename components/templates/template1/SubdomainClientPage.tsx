@@ -340,21 +340,21 @@ z"/>
                     <div>
                         <p className={styles.accent}>
                             {
-                                "Salón Eugenia"
+                                subdomainData.Location //"Salón Eugenia"
                             }
                         </p>
                         <p className={`${styles.normal}`}>
                             {
-                                "El Barrido Ixmiquilpan, Hidalgo"
+                                subdomainData.Address //"El Barrido Ixmiquilpan, Hidalgo"
                             }
                         </p>
                         <b className={styles.normal}>
                             {
-                                "13:00 pm"
+                                subdomainData.PartySchedule //"13:00pm"
                             }
                         </b>
                     </div>
-                    <a href={"https://maps.app.goo.gl/HJ9rTkbpR5dKVDae7?g_st=com.google.maps.preview.copy"} className={`${styles.normal} ${styles.button}`}>
+                    <a href={subdomainData.PartyUrl/*"https://maps.app.goo.gl/HJ9rTkbpR5dKVDae7?g_st=com.google.maps.preview.copy"*/} className={`${styles.normal} ${styles.button}`}>
                         {
                             "Ubicación"
                         }

@@ -38,6 +38,10 @@ export interface SubdomainData {
   SecondImage: string;
   WeddingDate: string;
   ThirdImage: string;
+  Location: string;
+  Address: string;
+  PartySchedule: string;
+  PartyUrl: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -73,6 +77,10 @@ export async function getAllSubdomains() {
       SecondImage: data?.SecondImage || "",
       WeddingDate: data?.WeddingDate || "",
       ThirdImage: data?.ThirdImage || "",
+      Location: data?.Location || "",
+      Address: data?.Address || "",
+      PartySchedule: data?.PartySchedule || "",
+      PartyUrl: data?.PartyUrl || "",
     };
   });
 }
