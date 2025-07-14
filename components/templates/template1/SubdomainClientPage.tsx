@@ -388,7 +388,7 @@ z"/>
                             <div className={styles.container}>
                                 <div className={styles.container}>
                                     {subdomainData.DressCodeAvoidColors?.split(';')
-                                        .filter(color => color) // Remove empty strings
+                                        .filter(color => color)
                                         .map((color, index) => (
                                             <div
                                                 key={index}
@@ -396,11 +396,6 @@ z"/>
                                                 style={{ backgroundColor: color }}
                                             />
                                         ))}
-                                    <div className={`${styles.child} ${styles.left}`} />
-                                    <div className={`${styles.child} ${styles.middle}`} />
-                                    <div className={`${styles.child} ${styles.right}`} />
-                                    <div className={`${styles.child} ${styles.red}`} />
-                                    <div className={`${styles.child} ${styles.white}`} />
                                 </div>
                             </div>
                         </div>
