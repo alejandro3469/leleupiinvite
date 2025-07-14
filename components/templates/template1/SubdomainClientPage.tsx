@@ -613,7 +613,7 @@ z"/>
 </svg>
 
 const DressCodeIcon =
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg className={styles.icon} version="1.0" xmlns="http://www.w3.org/2000/svg"
 width="128.000000pt" height="128.000000pt" viewBox="0 0 128.000000 128.000000"
 preserveAspectRatio="xMidYMid meet">
 
