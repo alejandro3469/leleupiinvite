@@ -206,10 +206,10 @@
     font-weight: 300;
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 8px;
+    max-width: calc(4 * 40px + 3 * 8px);
 }
 
 .child {
