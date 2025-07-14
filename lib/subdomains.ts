@@ -51,6 +51,7 @@ export interface SubdomainData {
   GroomPhone  : string;
   BridePhone: string;
   InfoMessage: string;
+  FourthImage: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -99,6 +100,7 @@ export async function getAllSubdomains() {
       GroomPhone  : data?.GroomPhone || "",
       BridePhone : data?.BridePhone || "",
       InfoMessage : data?.InfoMessage || "",
+      FourthImage : data?.FourthImage || "",
     };
   });
 }

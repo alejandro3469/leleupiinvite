@@ -363,6 +363,19 @@ z"/>
                 </div>
             </section>
 
+            <div className={styles.bannerContainer}>
+                <div className={styles.banner}>
+                    <div className={styles.bannerImage}>
+                        <Image
+                            src={`data:image/jpeg;base64,${subdomainData.FourthImage}`}
+                            alt="Banner Image"
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
             <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <div className={styles.subcontainer}>
