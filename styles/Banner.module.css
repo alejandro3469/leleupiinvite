@@ -205,13 +205,11 @@
     font-size: 14px;
     font-weight: 300;
 }
-
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    height: 200px;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 100%;
 }
 
 .child {
@@ -224,6 +222,7 @@
     color: #fff;
     font-weight: bold;
     border-radius: 2px;
+    /* Remove any margins that might affect the wrapping */
 }
 
 .middle, .red {
