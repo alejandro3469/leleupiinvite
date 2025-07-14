@@ -210,6 +210,9 @@
     flex-wrap: wrap;
     gap: 16px;
     max-width: 100%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
 }
 
 .child {
