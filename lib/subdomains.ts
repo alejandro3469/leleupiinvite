@@ -48,6 +48,8 @@ export interface SubdomainData {
   DressCodeDescription: string;
   DressCodeColor  : string;
   DressCodeAvoidColors: string;
+  GroomPhone  : string;
+  BridePhone: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -92,7 +94,9 @@ export async function getAllSubdomains() {
       AccentColor: data?.AccentColor || "",
       DressCodeDescription: data?.DressCodeDescription || "",
       DressCodeColor: data?.DressCodeColor || "",
-      DressCodeAvoidColors: data?.DressCodeAvoidColors || ""
+      DressCodeAvoidColors: data?.DressCodeAvoidColors || "",
+      GroomPhone  : data?.GroomPhone || "",
+      BridePhone : data?.BridePhone || "",
     };
   });
 }

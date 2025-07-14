@@ -459,15 +459,15 @@ z"/>
                         }
                     </p>
                     <div className={styles.subcontainer}>
-                        <div onClick={sendWhatsAppMessage("+525630008517")} className={`${styles.normal} ${styles.button}`}>
+                        <div onClick={sendWhatsAppMessage(subdomainData.GroomPhone)} className={`${styles.normal} ${styles.button}`}>
                             {
-                                "Confirmar a Cristian"
+                                `Confirmar a ${subdomainData.groomName}`
                             }
                         </div>
 
-                        <div onClick={sendWhatsAppMessage("+525627641178")} className={`${styles.normal} ${styles.button}`}>
+                        <div onClick={sendWhatsAppMessage(subdomainData.BridePhone)} className={`${styles.normal} ${styles.button}`}>
                             {
-                                "Confirmar a Vanessa"
+                                `Confirmar a ${subdomainData.brideName}`
                             }
                         </div>
                     </div>
