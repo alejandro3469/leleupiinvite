@@ -50,6 +50,7 @@ export interface SubdomainData {
   DressCodeAvoidColors: string;
   GroomPhone  : string;
   BridePhone: string;
+  InfoMessage: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -97,6 +98,7 @@ export async function getAllSubdomains() {
       DressCodeAvoidColors: data?.DressCodeAvoidColors || "",
       GroomPhone  : data?.GroomPhone || "",
       BridePhone : data?.BridePhone || "",
+      InfoMessage : data?.InfoMessage || "",
     };
   });
 }

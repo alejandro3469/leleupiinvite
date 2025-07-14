@@ -448,9 +448,7 @@ z"/>
                     </p>
                     <b className={styles.normal}>
                         {
-                            "Queremos que nuestra boda sea una noche especial para que todos se relajen y disfruten. " +
-                            "Por ello, hemos decidido que el evento sea solo para adultos. " +
-                            "¡Esperamos celebrar con ustedes!"
+                            subdomainData.InfoMessage
                         }
                     </b>
                     <p className={styles.normal}>
