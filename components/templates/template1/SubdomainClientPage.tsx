@@ -363,7 +363,7 @@ z"/>
                 </div>
             </section>
 
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <div className={styles.subcontainer}>
                             {DressCodeIcon}
@@ -403,7 +403,7 @@ z"/>
                 </div>
             </section>
 
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
 
                 <div className={`${styles.quoteText}`}>
                     <div>
@@ -439,7 +439,7 @@ z"/>
 
 
 
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <p className={`${styles.normal} ${styles.title}`}>
                         {
@@ -475,7 +475,7 @@ z"/>
                 </div>
             </section>
 
-            <section className={`${styles.initialsSectionContainer}`}>
+            <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`}>
                     <p className={styles.accent}>
                         {
