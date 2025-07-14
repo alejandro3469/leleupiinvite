@@ -45,6 +45,9 @@ export interface SubdomainData {
   MainColor: string;
   QuoteTextColor: string;
   AccentColor: string;
+  DressCodeDescription: string;
+  DressCodeColor  : string;
+  DressCodeAvoidColors: string;
 }
 
 export async function getSubdomainData(subdomain: string) {
@@ -87,6 +90,9 @@ export async function getAllSubdomains() {
       MainColor: data?.MainColor || "",
       QuoteTextColor: data?.QuoteTextColor || "",
       AccentColor: data?.AccentColor || "",
+      DressCodeDescription: data?.DressCodeDescription || "",
+      DressCodeColor: data?.DressCodeColor || "",
+      DressCodeAvoidColors: data?.DressCodeAvoidColors || ""
     };
   });
 }

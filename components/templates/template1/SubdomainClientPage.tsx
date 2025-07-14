@@ -362,6 +362,51 @@ z"/>
 
                 </div>
             </section>
+
+            <section className={`${styles.initialsSectionContainer}`}>
+                <div className={`${styles.quoteText}`}>
+                    <div className={styles.subcontainer}>
+                        <img className={styles.icon} src={"/invitations-files/Cristian&Vanessa/17456117.svg"} />
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Código de vestimenta"
+                            }
+                        </p>
+                    </div>
+                    <div className={styles.subcontainer}>
+                        <p className={styles.accent}>
+                            {
+                                subdomainData.DressCodeDescription
+                            }
+                        </p>
+                        <div>
+                            <p className={styles.normal}>
+                                {
+                                    "Hagamos que todo luzca como siempre lo soñamos. Por favor evita los siguientes colores"
+                                }
+                            </p>
+                            <div className={styles.container}>
+                                <div className={styles.container}>
+                                    {subdomainData.DressCodeAvoidColors?.split(';')
+                                        .filter(color => color) // Remove empty strings
+                                        .map((color, index) => (
+                                            <div
+                                                key={index}
+                                                className={`${styles.child}`}
+                                                style={{ backgroundColor: color }}
+                                            />
+                                        ))}
+                                    <div className={`${styles.child} ${styles.left}`} />
+                                    <div className={`${styles.child} ${styles.middle}`} />
+                                    <div className={`${styles.child} ${styles.right}`} />
+                                    <div className={`${styles.child} ${styles.red}`} />
+                                    <div className={`${styles.child} ${styles.white}`} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
