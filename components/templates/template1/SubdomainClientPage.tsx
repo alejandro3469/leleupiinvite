@@ -366,9 +366,7 @@ z"/>
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText}`}>
                     <div className={styles.subcontainer}>
-                        <div className={`${styles.icon}`}>
                             {DressCodeIcon}
-                        </div>
                         <p className={`${styles.normal} ${styles.title}`}>
                             {
                                 "Código de vestimenta"
