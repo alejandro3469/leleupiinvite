@@ -206,10 +206,10 @@
     font-weight: 300;
 }
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 40px);
-    gap: 8px;
-    max-width: calc(4 * 40px + 3 * 8px);
+    gap: 16px;
 }
 
 .child {
