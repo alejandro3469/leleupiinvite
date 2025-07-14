@@ -437,6 +437,53 @@ z"/>
                 </div>
             </section>
 
+
+
+            <section className={`${styles.initialsSectionContainer}`}>
+                <div className={`${styles.quoteText}`}>
+                    <p className={`${styles.normal} ${styles.title}`}>
+                        {
+                            "¿Contamos contigo?"
+                        }
+                    </p>
+                    <b className={styles.normal}>
+                        {
+                            "Queremos que nuestra boda sea una noche especial para que todos se relajen y disfruten. " +
+                            "Por ello, hemos decidido que el evento sea solo para adultos. " +
+                            "¡Esperamos celebrar con ustedes!"
+                        }
+                    </b>
+                    <p className={styles.normal}>
+                        {
+                            "Por favor confirma tu asistencia por WhatsApp"
+                        }
+                    </p>
+                    <div className={styles.subcontainer}>
+                        <div onClick={sendWhatsAppMessage("+525630008517")} className={`${styles.normal} ${styles.button}`}>
+                            {
+                                "Confirmar a Cristian"
+                            }
+                        </div>
+
+                        <div onClick={sendWhatsAppMessage("+525627641178")} className={`${styles.normal} ${styles.button}`}>
+                            {
+                                "Confirmar a Vanessa"
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section className={`${styles.initialsSectionContainer}`}>
+                <div className={`${styles.quoteText}`}>
+                    <p className={styles.accent}>
+                        {
+                            "¡Te esperamos!"
+                        }
+                    </p>
+                </div>
+            </section>
         </div>
     );
 }
