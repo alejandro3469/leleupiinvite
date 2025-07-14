@@ -402,6 +402,41 @@ z"/>
                     </div>
                 </div>
             </section>
+
+            <section className={`${styles.initialsSectionContainer}`}>
+
+                <div className={`${styles.quoteText}`}>
+                    <div>
+                        <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
+                        </svg>
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Regalos"
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.accent}>
+                            {
+                                "El gran regalo es contar con tu presencia"
+                            }
+                        </p>
+                        <p className={styles.normal}>
+                            {
+                                "Pero si tu deseo es contribuir con nuestra felicidad estaremos muy agradecidos"
+                            }
+                        </p>
+                    </div>
+
+                    <div className={`${styles.normal} ${styles.button}`}>
+                        {
+                            "Lluvia de sobres o regalo físico"
+                        }
+                    </div>
+                </div>
+            </section>
+
         </div>
     );
 }
