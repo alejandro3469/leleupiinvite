@@ -36,10 +36,10 @@ const CarouselDemo = () => {
                     <div className="p-1">
                         <Card className="bg-transparent shadow-none">
                             <CardContent className="flex flex-col aspect-[4/3] p-4 justify-center items-center">
-                                <div className="space-y-3 text-center">
-                                    <h3 className="text-lg font-medium">Saúl Enrique Gutierrez Mendoza</h3>
-                                    <p className="text-lg">Banco Azteca</p>
-                                    <p className="text-lg">4027665875627391</p>
+                                <div className="space-y-3 text-center" style={{"color": "#1b437c"}}>
+                                    <h3 className={`text-lg font-medium ${styles.normal}`}>Saúl Enrique Gutierrez Mendoza</h3>
+                                    <p className={`text-lg ${styles.normal}`}>Banco Azteca</p>
+                                    <p className={`text- ${styles.normal}`}>4027665875627391</p>
                                 </div>
                             </CardContent>
                         </Card>
@@ -50,7 +50,7 @@ const CarouselDemo = () => {
                     <div className="p-1">
                         <Card className="bg-transparent shadow-none">
                             <CardContent className="flex aspect-[4/3] items-center justify-center p-4">
-                                <span className="text-lg text-center font-medium">
+                                <span className={`text-lg text-center font-medium ${styles.normal}`} style={{"color": "#1b437c"}}>
                                     Regalo fisico el dia de la boda
                                 </span>
                             </CardContent>
