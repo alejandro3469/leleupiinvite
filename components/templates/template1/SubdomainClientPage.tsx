@@ -379,35 +379,40 @@ z"/>
             <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : subdomainData.MainColor}}>
                 <div className={`${styles.quoteText}`} style={{"color" : subdomainData.QuoteTextColor}}>
                     <div className={styles.subcontainer}>
-                            {DressCodeIcon}
+                        {DressCodeIcon}
                         <p className={`${styles.normal} ${styles.title}`}>
-                            {(subdomainData.groomName == "Enrique") &&
-                                <div>
-                                    <div>Colores similares a:</div>
-                                    <div className={styles.container}>
-                                        <div className={styles.container}>
-                                            <div
-                                                className={`${styles.child}`}
-                                                style={{ backgroundColor: "#6E85B7" }}
-                                            />
-                                            <div
-                                                className={`${styles.child}`}
-                                                style={{ backgroundColor: "#B7D3DF" }}
-                                            />
-                                            <div
-                                                className={`${styles.child}`}
-                                                style={{ backgroundColor: "#99FEFF" }}
-                                            />
-                                            <div
-                                                className={`${styles.child}`}
-                                                style={{ backgroundColor: "#87AAAA" }}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+                            {
+                                "Código de vestimenta"
                             }
                         </p>
                     </div>
+                    <p className={`${styles.normal} ${styles.title}`}>
+                        {(subdomainData.groomName == "Enrique") &&
+                            <div>
+                                <div>Colores similares a:</div>
+                                <div className={styles.container}>
+                                    <div className={styles.container}>
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#6E85B7" }}
+                                        />
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#B7D3DF" }}
+                                        />
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#99FEFF" }}
+                                        />
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#87AAAA" }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </p>
                     <div className={styles.subcontainer}>
                         <p className={styles.accent}>
                             {
