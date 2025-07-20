@@ -51,7 +51,7 @@ const CarouselDemo = () => {
                         <Card className="bg-transparent shadow-none">
                             <CardContent className="flex aspect-[4/3] items-center justify-center p-4">
                                 <span className={`text-lg text-center font-medium ${styles.normal}`} style={{"color": "#1b437c"}}>
-                                    Regalo fisico el dia de la boda
+                                    Regalo físico el dia de la boda
                                 </span>
                             </CardContent>
                         </Card>
