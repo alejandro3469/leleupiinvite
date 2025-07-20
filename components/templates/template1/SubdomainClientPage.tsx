@@ -58,6 +58,8 @@ const CarouselDemo = () => {
                     </div>
                 </CarouselItem>
             </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
         </Carousel>
     )
 }
