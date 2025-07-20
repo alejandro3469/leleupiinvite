@@ -381,8 +381,30 @@ z"/>
                     <div className={styles.subcontainer}>
                             {DressCodeIcon}
                         <p className={`${styles.normal} ${styles.title}`}>
-                            {
-                                "Código de vestimenta"
+                            {(subdomainData.groomName == "Enrique") &&
+                                <div>
+                                    <div>Colores similares a:</div>
+                                    <div className={styles.container}>
+                                        <div className={styles.container}>
+                                            <div
+                                                className={`${styles.child}`}
+                                                style={{ backgroundColor: "#6E85B7" }}
+                                            />
+                                            <div
+                                                className={`${styles.child}`}
+                                                style={{ backgroundColor: "#B7D3DF" }}
+                                            />
+                                            <div
+                                                className={`${styles.child}`}
+                                                style={{ backgroundColor: "#99FEFF" }}
+                                            />
+                                            <div
+                                                className={`${styles.child}`}
+                                                style={{ backgroundColor: "#87AAAA" }}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
                             }
                         </p>
                     </div>
