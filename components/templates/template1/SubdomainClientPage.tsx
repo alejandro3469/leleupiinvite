@@ -535,7 +535,7 @@ z"/>
                     </div>
 
                     {(subdomainData.groomName == "Enrique") &&
-                        <div style={{"padding" : "0 16px 0 16px"}}>
+                        <div style={{"padding" : "0 40px 0 40px"}}>
                             <CarouselDemo />
                         </div>
                     }
