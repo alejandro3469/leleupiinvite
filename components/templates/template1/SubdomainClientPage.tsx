@@ -535,7 +535,9 @@ z"/>
                     </div>
 
                     {(subdomainData.groomName == "Enrique") &&
-                        <CarouselDemo />
+                        <div style={{"padding" : "0 16px 0 16px"}}>
+                            <CarouselDemo />
+                        </div>
                     }
 
                     {(subdomainData.groomName != "Enrique") &&
