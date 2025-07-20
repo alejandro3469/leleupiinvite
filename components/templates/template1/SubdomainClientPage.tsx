@@ -1,11 +1,68 @@
 "use client";
-import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Banner.module.css';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { protocol, rootDomain } from '@/lib/utils';
 import { SubdomainData } from '@/lib/subdomains';
+
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
+
+const CarouselDemo = () => {
+    const plugin = React.useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    )
+
+    return (
+        <Carousel
+            plugins={[plugin.current]}
+            className="w-full max-w-xs"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+        >
+            <CarouselContent>
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card>
+                            <CardContent className="flex flex-col aspect-square p-6 gap-4">
+                                <div className="space-y-2">
+                                    <h3 className="text-xl font-bold">Saúl Enrique Gutierrez Mendoza</h3>
+                                    <p className="text-sm text-gray-600">Banco Azteca</p>
+                                    <p className="text-sm text-gray-600">4027665875627391</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card>
+                            <CardContent className="flex aspect-square items-center justify-center p-6">
+                <span className="text-2xl text-center font-medium">
+                  Regalo fisico el dia de la boda
+                </span>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
+    )
+}
 
 export default function SubdomainClientPage({
                                                 subdomainData
@@ -477,11 +534,21 @@ z"/>
                         </p>
                     </div>
 
-                    <div className={`${styles.normal} ${styles.button}`}>
-                        {
-                            "Lluvia de sobres o regalo físico"
-                        }
-                    </div>
+                    {(subdomainData.groomName == "Enrique") &&
+                        <div className={`${styles.normal} ${styles.button} ${styles.giftsList}`}>
+                            {
+                                "Lluvia de sobres o regalo físico"
+                            }
+                        </div>
+                    }
+
+                    {(subdomainData.groomName != "Enrique") &&
+                        <div className={`${styles.normal} ${styles.button}`}>
+                            {
+                                "Lluvia de sobres o regalo físico"
+                            }
+                        </div>
+                    }
                 </div>
             </section>
 
