@@ -34,12 +34,12 @@ const CarouselDemo = () => {
             <CarouselContent>
                 <CarouselItem>
                     <div className="p-1">
-                        <Card>
-                            <CardContent className="flex flex-col aspect-square p-6 gap-4">
-                                <div className="space-y-2">
-                                    <h3 className="text-xl font-bold">Saúl Enrique Gutierrez Mendoza</h3>
-                                    <p className="text-sm text-gray-600">Banco Azteca</p>
-                                    <p className="text-sm text-gray-600">4027665875627391</p>
+                        <Card className="bg-transparent shadow-none">
+                            <CardContent className="flex flex-col aspect-[4/3] p-4 justify-center items-center">
+                                <div className="space-y-3 text-center">
+                                    <h3 className="text-lg font-medium">Saúl Enrique Gutierrez Mendoza</h3>
+                                    <p className="text-lg">Banco Azteca</p>
+                                    <p className="text-lg">4027665875627391</p>
                                 </div>
                             </CardContent>
                         </Card>
@@ -48,11 +48,11 @@ const CarouselDemo = () => {
 
                 <CarouselItem>
                     <div className="p-1">
-                        <Card>
-                            <CardContent className="flex aspect-square items-center justify-center p-6">
-                <span className="text-2xl text-center font-medium">
-                  Regalo fisico el dia de la boda
-                </span>
+                        <Card className="bg-transparent shadow-none">
+                            <CardContent className="flex aspect-[4/3] items-center justify-center p-4">
+                                <span className="text-lg text-center font-medium">
+                                    Regalo fisico el dia de la boda
+                                </span>
                             </CardContent>
                         </Card>
                     </div>
