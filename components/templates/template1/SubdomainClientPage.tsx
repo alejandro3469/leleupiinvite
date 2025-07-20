@@ -414,7 +414,7 @@ z"/>
                                         />
                                         <div
                                             className={`${styles.child}`}
-                                            style={{ backgroundColor: "#D6EFED" }}
+                                            style={{ backgroundColor: "#96C7C1" }}
                                         />
                                     </div>
                                 </div>
