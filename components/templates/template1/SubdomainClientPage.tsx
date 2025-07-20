@@ -389,7 +389,7 @@ z"/>
                     <p className={`${styles.normal}`}>
                         {(subdomainData.groomName == "Enrique") &&
                             <div>
-                                <div>Colores similares a:</div>
+                                <div>Colores similares a</div>
                                 <div className={styles.container}>
                                     <div className={styles.container}>
                                         <div
@@ -398,7 +398,7 @@ z"/>
                                         />
                                         <div
                                             className={`${styles.child}`}
-                                            style={{ backgroundColor: "#B7D3DF" }}
+                                            style={{ backgroundColor: "#B2C8DF" }}
                                         />
                                         <div
                                             className={`${styles.child}`}
@@ -407,6 +407,14 @@ z"/>
                                         <div
                                             className={`${styles.child}`}
                                             style={{ backgroundColor: "#87AAAA" }}
+                                        />
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#748DA6" }}
+                                        />
+                                        <div
+                                            className={`${styles.child}`}
+                                            style={{ backgroundColor: "#8CC0DE" }}
                                         />
                                     </div>
                                 </div>
