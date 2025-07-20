@@ -386,7 +386,7 @@ z"/>
                             }
                         </p>
                     </div>
-                    <p className={`${styles.normal} ${styles.title}`}>
+                    <p className={`${styles.normal}`}>
                         {(subdomainData.groomName == "Enrique") &&
                             <div>
                                 <div>Colores similares a:</div>
