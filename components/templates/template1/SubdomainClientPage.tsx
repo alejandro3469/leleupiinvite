@@ -535,11 +535,7 @@ z"/>
                     </div>
 
                     {(subdomainData.groomName == "Enrique") &&
-                        <div className={`${styles.normal} ${styles.button} ${styles.giftsList}`}>
-                            {
-                                "Lluvia de sobres o regalo físico"
-                            }
-                        </div>
+                        <CarouselDemo />
                     }
 
                     {(subdomainData.groomName != "Enrique") &&
