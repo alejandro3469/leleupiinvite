@@ -287,7 +287,19 @@ export default function StaticWeddingPage({ weddingData }: StaticWeddingPageProp
                 </div>
             </section>
 
-
+            <div className={styles.bannerContainer3}>
+                <div className={styles.banner}>
+                    <div className={styles.bannerImage}>
+                        <Image
+                            src={weddingData.SixthImage}
+                            alt="Sixth Image"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
 
             <section className={`${styles.initialsSectionContainer}`}  style={{"backgroundColor" : weddingData.MainColor}}>
                 <div className={`${styles.quoteText}`} style={{"color" : weddingData.QuoteTextColor}}>

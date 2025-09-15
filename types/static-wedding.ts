@@ -22,4 +22,5 @@ export interface StaticWeddingData {
   InfoMessage: string;
   FourthImage: string;
   FifthImage: string;
+  SixthImage: string;
 }
