@@ -44,6 +44,11 @@ export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const subdomain = extractSubdomain(request);
 
+  // Handle static wedding page route
+  if (pathname === '/josias-maelis') {
+    return NextResponse.next();
+  }
+
   if (subdomain) {
     // Block access to admin page from subdomains
     if (pathname.startsWith('/admin')) {
