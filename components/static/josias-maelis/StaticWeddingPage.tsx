@@ -225,7 +225,7 @@ export default function StaticWeddingPage({ weddingData }: StaticWeddingPageProp
                         <div>
                             <p className={styles.normal}>
                                 {
-                                    "Hagamos que todo luzca como siempre lo soñamos. Por favor evita los siguientes colores"
+                                    "Hagamos que todo luzca como siempre lo soñamos. Por favor evita el siguiente color"
                                 }
                             </p>
                             <div className={styles.container}>
